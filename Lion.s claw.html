@@ -1,0 +1,2016 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=670"> 
+        <style>
+
+            body.battlescribe {
+                margin: 0px;
+                padding: 0px;
+                border-width: 0px;
+            }
+
+            div.battlescribe {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 8px;
+                border-width: 0px;
+                
+                font-family: sans-serif;
+                font-size: 12px;
+                color: #d9a822;
+                background-color: black;
+                text-align: left;
+            }
+
+            div.battlescribe h1,
+            div.battlescribe h2,
+            div.battlescribe h3,
+            div.battlescribe h4 {
+                margin: 0px;
+                padding: 0px;
+                border-width: 0px;
+            }
+
+            div.battlescribe h1 {
+                margin: 8px 0px 0px 0px;
+                
+                font-size: 16px;
+            }
+
+            div.battlescribe h2 {
+                font-size: 15px;
+            }
+
+            div.battlescribe h3 {
+                font-size: 14px;
+            }
+
+            div.battlescribe h4 {
+                font-size: 13px;
+            }
+
+            div.battlescribe div.summary {
+                margin: 16px 0px 0px 0px;
+                padding: 0px;
+                border-width: 0px;
+            }
+
+            div.battlescribe ul {
+                margin: 0px 0px 0px 16px;
+                padding: 0px;
+                border-width: 0px;
+                
+                list-style-image: none;
+                list-style-position: outside;
+                list-style-type: none;
+            }
+
+            div.battlescribe li {
+                margin: 8px 0px 0px 0px;
+                padding: 0px;
+                border-width: 0px;
+            }
+
+            div.battlescribe li.force {
+                margin: 24px 0px 0px 0px;
+                padding: 0px;
+                border-width: 0px;
+            }
+
+            div.battlescribe li.category {
+                margin: 16px 0px 0px 0px;
+                padding: 0px;
+                border-width: 0px;
+            }
+
+            div.battlescribe li.rootselection {
+                margin: 16px 0px 0px 0px;
+                padding: 8px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #BBBBBB;
+                
+                page-break-inside: avoid;
+            }
+
+            div.battlescribe p {
+                margin: 4px 0px 0px 16px;
+                padding: 0px;
+                border-width: 0px;
+                
+                font-size: 12px;
+            }
+
+            div.battlescribe p.category-names {
+            }
+
+            div.battlescribe p.rule-names {
+            }
+
+            div.battlescribe p.profile-names {
+            }
+
+            div.battlescribe table {
+                margin: 8px 0px 0px 16px;
+                padding: 0px;
+                border-collapse: collapse;
+                
+                font-size: 12px;
+                color: #f6f6f6;
+                background-color: black;
+                
+                page-break-inside: avoid;
+            }
+
+            div.battlescribe tr {
+                border-width: 1px;
+                border-style: solid;
+                border-color: #BBBBBB;
+            }
+
+            div.battlescribe th {
+                padding: 4px;
+                margin: 0px;
+                border-width: 0px;
+                
+                font-weight: bold;
+                text-align: left;
+            }
+
+            div.battlescribe td {
+                padding: 4px;
+                margin: 0px;
+                border-width: 0px;
+                
+                text-align: left;
+            }
+
+            div.battlescribe td.profile-name {
+                font-weight: bold;
+            }
+
+            div.battlescribe td.statistic-name {
+                font-weight: bold;
+            }
+
+            div.battlescribe table.statistics {
+            }
+
+            div.battlescribe table.statistics tr.subtotal {
+                font-weight: bold;
+            }
+
+            div.battlescribe table.statistics tr.total {
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            div.battlescribe table.statistics th {
+                border-width: 1px;
+                border-style: solid;
+                border-color: #BBBBBB;
+                
+                font-size: 13px;
+                text-align: right;
+            }
+
+            div.battlescribe table.statistics th.center {
+                text-align: center;
+            }
+
+            div.battlescribe table.statistics td {
+                border-width: 1px;
+                border-style: solid;
+                border-color: #BBBBBB;
+                
+                text-align: right;
+            }
+
+            div.battlescribe span.bold {
+                font-weight: bold;
+            }
+
+            div.battlescribe span.italic {
+                font-style: italic;
+            }
+
+            div.battlescribe span.caps {
+                font-variant: small-caps;
+            }
+
+.Cptbutton{
+    width: 100%;
+    height: 80px;
+    background-color: green;
+    color: #d9a822;
+    display: flex;
+    justify-items: center;
+    font-size: 60px;
+
+}
+
+
+.homebutton{
+    width: 10%;
+    height: 40px;
+    background-color: green;
+    color: #d9a822;
+    display: flex;
+    justify-items: center;
+    font-size: 30px;
+    position: fixed;
+    
+}
+        </style>
+
+    </head>
+    <body class="battlescribe">
+        <header>
+            <a id="home" >
+                <section class="homebutton">
+                    <a href="#home">Home</a>    
+                </section>
+
+            </a>
+            <section class="Cptbutton"> <a href="#captain">
+                Captain
+            </a>
+        </section>
+        </a>
+        <section class="Cptbutton"> <a href="#ezekiel">
+            Ezekiel
+        </a>
+    </section>
+        
+        <section class="Cptbutton"> <a href="#infiltrator">
+            infiltrator
+        </a>
+            </section>
+            <section class="Cptbutton"> <a href="#terminator">
+                terminator
+            </a>
+                </section>
+                
+                <section class="Cptbutton"> <a href="#ravenchamp">
+                    ravenchamp
+                </a>
+                    </section>
+                    <section class="Cptbutton"> <a href="#attackbike">
+                        attackbike
+                    </a>
+                        </section>
+        </header>
+      
+
+        <div class="battlescribe">
+            <h1>Lion.s claw (Warhammer 40,000 9th Edition) [96 PL, 21CP, 1,551pts]</h1>
+            <ul>
+            <li class="force">
+                <h2>Arks of Omen Detachment (Imperium - Adeptus Astartes - Dark Angels) [87 PL, 1,394pts, 9CP]</h2>
+                <p class="rule-names">
+                    <span class="bold">Rules:</span> <span class="italic">1st Company, 2nd Company, And They Shall Know No Fear, Angels of Death, Assault Doctrine, Bolter Discipline, Combat Doctrines, Devastator Doctrine, Fire Discipline, Grim Resolve, Implacable, Shock Assault, Speed of the Raven, Tactical Doctrine</span>
+                </p>
+                <ul>
+                    <li class="category">
+                        <h3>Configuration [12CP]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>**Chapter Selector**</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Dark Angels
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">PC: DA, Configuration</span>
+                                </p>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Battle Size [12CP]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> 3. Strike Force (101-200 Total PL / 1001-2000 Points)  [12CP]
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Detachment Command Cost</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Game Type</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>HQ [22 PL, 355pts, -2CP]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Captain in Terminator Armour [6 PL, 100pts]</h4><a id="captain"></a> 
+                                <p>
+                                    <span class="bold">Selections:</span> 1. Brilliant Strategist, The Honor Vehement, Warlord
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Character, Faction: Imperium, Infantry, Captain, Terminator, HQ, Faction: Dark Angels, Deathwing, Warlord</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Inner Circle, Teleport Strike</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">1. Brilliant Strategist, Iron Halo, Rites of Battle, The Honor Vehement (Aura)</span>, <span class="bold">Unit:</span> <span class="italic">Captain in Terminator Armour</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">1. Brilliant Strategist</td>
+                                            <td>In your Command phase, you can select one friendly DARK ANGELS unit within 6&quot; of this WARLORD. Until the start of your next Command phase:<br/>
+                                            <br/>
+                                            • Each time a model in that unit makes an attack, if the Tactical Doctrine is active for your army, then the Devastator Doctrine is considered to be active for that attack instead.<br/>
+                                            • Each time a model in that unit makes an attack, if the Assault Doctrine is active for your army, then the Tactical Doctrine is considered to be active for that attack instead.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Iron Halo</td>
+                                            <td>This model has a 4+ invulnerable save.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Rites of Battle</td>
+                                            <td>While a friendly &lt;CHAPTER&gt; CORE unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a hit roll of 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">The Honor Vehement (Aura)</td>
+                                            <td>While a friendly &lt;Chapter&gt; Core unit is within 6&quot; of the bearer, each time that unit fights, until that fight is resolved, add 1 to the Attacks characteristic of models in that unit. This is not cumulative with the additional attack granted by the Shock Assault ability (pg 125).`</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Captain in Terminator Armour</td>
+                                            <td>5&quot;</td><td>2+</td><td>2+</td><td>4</td><td>4</td><td>6</td><td>4</td><td>9</td><td>2+</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Ezekiel [7 PL, 105pts]</h4><a id="ezekiel"></a> 
+                                <p>
+                                    <span class="bold">Selections:</span> 3) Righteous Repugnance, 4) Trephination, 5) Engulfing Fear, Frag &amp; Krak grenades, The Deliverer, Traitor&apos;s Bane
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">HQ, Ezekiel, Faction: Adeptus Astartes, Faction: Dark Angels, Faction: Deathwing, Faction: Imperium, Librarian, Psyker, Inner Circle, Chief Librarian, Infantry</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Inner Circle</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Book of Salvation (Aura), Keeper of the Keys, Master Interromancer, Psychic Hood</span>, <span class="bold">Psychic Power:</span> <span class="italic">3) Righteous Repugnance, 4) Trephination, 5) Engulfing Fear</span>, <span class="bold">Psyker:</span> <span class="italic">Ezekiel</span>, <span class="bold">Unit:</span> <span class="italic">Ezekiel</span>, <span class="bold">Weapon:</span> <span class="italic">Frag grenades, Krak grenades, The Deliverer, Traitor&apos;s Bane</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Book of Salvation (Aura)</td>
+                                            <td>While a friendly DARK ANGELS CORE or DARK ANGELS CHARACTER unit is within 6&quot; of this model, each time that unit fights, until that fight is resolved, add 1 to the Attacks characteristic of models in that unit. This is not cumulative with the additional attack granted by the Shock Assault ability (see Codex: Space Marines).</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Keeper of the Keys</td>
+                                            <td>This model has a 4+ invulnerable save.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Master Interromancer</td>
+                                            <td>Each time this model attempts to manifest a psychic power from the Interromancy discipline, add 1 to the Psychic test.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Psychic Hood</td>
+                                            <td>Each time a Deny the Witch test is taken for this model, if the unit attempting to manifest the psychic power is within 12&quot; of this model, add 1 to that Deny the Witch test</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Psychic Power</th>
+                                            <th>Warp Charge</th><th>Range</th><th>Details</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">3) Righteous Repugnance</td>
+                                            <td>7</td><td>12&quot;</td><td>Blessing: Righteous Repugnance has a warp charge value of 7. If manifested, select one friendly DARK ANGELS unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, you can re-roll the hit roll and you can re-roll the wound roll.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">4) Trephination</td>
+                                            <td>5</td><td>18&quot;</td><td>Witchfire: Trephination has a warp charge value of 5. If manifested, the closest enemy unit within 18&quot; and visible to this PSYKER suffers D3 mortal wounds. If the result of the Psychic test was greater than the Leadership characteristic of the enemy unit, that enemy unit suffers 3 mortal wounds instead.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">5) Engulfing Fear</td>
+                                            <td>7</td><td>24&quot;</td><td>Malediction: Engulfing Fear has a warp charge value of 7. If manifested, select one enemy unit within 24&quot; of this PSYKER. Until the start of your next psychic phase:<br/>
+                                            • Subtract 1 from Leadership characteristic of models in that unit.<br/>
+                                            • That unit cannot use the Objective Secured ability or any similar abilities that allow them to control an objective marker regardless of the number of enemy models within range of an objective marker.<br/>
+                                            • If the result of the Psychic test was equal to or greater than that unit&apos;s Leadership characteristic, that unit cannot perform actions (if that unit is currently performing an action, it immediately fails).</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Psyker</th>
+                                            <th>Cast</th><th>Deny</th><th>Powers Known</th><th>Other</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Ezekiel</td>
+                                            <td>2</td><td>2</td><td>Smite, 3 from Interromancy</td><td></td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Ezekiel</td>
+                                            <td>6&quot;</td><td>2+</td><td>2+</td><td>4</td><td>4</td><td>5</td><td>3</td><td>9</td><td>2+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">The Deliverer</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>-1</td><td>2</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Traitor&apos;s Bane</td>
+                                            <td>Melee</td><td>Melee</td><td>+2</td><td>-3</td><td>D3</td><td>Each time an attack made with this weapon is allocated to a FALLEN or HERETIC ASTARTES unit, that attack has a Damage characteristic of 3.</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Librarian [5 PL, 80pts, -1CP]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> 3) Righteous Repugnance, 6) Psychic Fortress (Aura), Force sword, Frag &amp; Krak grenades, Master-Crafted Weapon, Smite, Storm bolter, Stratagem: Relic of the Chapter [-1CP]
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Character, Faction: Imperium, Infantry, Psyker, Librarian, HQ, Faction: Dark Angels, Deathwing</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Inner Circle</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Master-Crafted Weapon, Psychic Hood</span>, <span class="bold">Psychic Power:</span> <span class="italic">3) Righteous Repugnance, 6) Psychic Fortress (Aura), Smite</span>, <span class="bold">Psyker:</span> <span class="italic">Psyker</span>, <span class="bold">Unit:</span> <span class="italic">Librarian</span>, <span class="bold">Weapon:</span> <span class="italic">Force sword, Frag grenades, Krak grenades, Storm bolter</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Master-Crafted Weapon</td>
+                                            <td>When you give a model this Relic, select one weapon that model is equipped with (this cannot be a weapon whose profile includes the word ‘master-crafted’). Add 1 to the Damage characteristic of that weapon. That weapon is considered to be a Chapter Relic.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Psychic Hood</td>
+                                            <td>Each time a Deny the Witch test is taken for this model, if the unit attempting to manifest the psychic power is within 12&quot; of this model, add 1 to that Deny the Witch test</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Psychic Power</th>
+                                            <th>Warp Charge</th><th>Range</th><th>Details</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">3) Righteous Repugnance</td>
+                                            <td>7</td><td>12&quot;</td><td>Blessing: Righteous Repugnance has a warp charge value of 7. If manifested, select one friendly DARK ANGELS unit within 12&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, you can re-roll the hit roll and you can re-roll the wound roll.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">6) Psychic Fortress (Aura)</td>
+                                            <td>6</td><td>18&quot;</td><td>Details: Blessing (Aura): Psychic Fortress has a warp charge value of 6. If manifested, then until the start of your next Psychic phase, while a friendly &lt;Chapter&gt; unit is within 6&quot; of this Psyker, models in that nit have a 5+ invulnerable save. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Smite</td>
+                                            <td>5</td><td>18&quot;</td><td>Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Psyker</th>
+                                            <th>Cast</th><th>Deny</th><th>Powers Known</th><th>Other</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Psyker</td>
+                                            <td>2</td><td>1</td><td>Smite &amp; 2 Librarius</td><td>-</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Librarian</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>4</td><td>3</td><td>9</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Force sword</td>
+                                            <td>Melee</td><td>Melee</td><td>+1</td><td>-3</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Storm bolter</td>
+                                            <td>24&quot;</td><td>Rapid Fire 2</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Lieutenant [4 PL, 70pts, -1CP]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Bolt pistol, Bolt pistol, Frag &amp; Krak grenades, Power sword, Stratagem: Relic of the Chapter [-1CP], The Armour Indomitus
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Character, Faction: Imperium, Faction: Adeptus Astartes, Infantry, Lieutenant, Faction: Dark Angels, HQ</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Company Heroes, Tactical Precision, The Armour Indomitus</span>, <span class="bold">Unit:</span> <span class="italic">Lieutenant</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Power sword</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Company Heroes</td>
+                                            <td>If your army is Battle-forged, then for each LIEUTENANT unit included in a Detachment, a second LIEUTENANT unit can be included in that Detachment without taking up an additional Battlefield Role slot.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Tactical Precision</td>
+                                            <td>While a friendly &lt;CHAPTER&gt; CORE unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a wound roll of 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">The Armour Indomitus</td>
+                                            <td>- Add 1 to the Wounds characteristic of the bearer.<br/>
+                                            - The bearer has a save of 2+<br/>
+                                            - Once per battle, before making a saving throw for the bearer, it can activate its armour&apos;s force field. If it does, the until the end of the phase, the bearer has a 3+ invulnerable save.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Lieutenant</td>
+                                            <td>6&quot;</td><td>2+</td><td>2+</td><td>4</td><td>4</td><td>4</td><td>3</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Power sword</td>
+                                            <td>Melee</td><td>Melee</td><td>+1</td><td>-3</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Troops [26 PL, 334pts]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Infiltrator Squad [6 PL, 100pts]</h4><a id="infiltrator"></a> 
+                                <p>
+                                    <span class="bold">Selections:</span> Helix gauntlet
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Smokescreen, Faction: Adeptus Astartes, Primaris, Infantry, Infiltrator Squad, Phobos, Faction: Imperium, Core, Faction: Dark Angels, Troops</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Combat Squads, Concealed Positions</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Helix gauntlet, Omni-scramblers</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>4x Infiltrator [80pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> 4x Bolt pistol, 4x Frag &amp; Krak grenades, 4x Marksman bolt carbine
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Infiltrator</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Marksman bolt carbine</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Infiltrator Sergeant [20pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Marksman bolt carbine
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Infiltrator Sergeant</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Marksman bolt carbine</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Helix gauntlet</td>
+                                            <td>Once per turn, the first time a saving throw is failed for the bearer&apos;s unit, the Damage charactertistic of that attack is changed to 0.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Omni-scramblers</td>
+                                            <td>Enemy units that are set up on the battlefield as reinforcements cannot be set up within 12&quot; of this unit.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Infiltrator</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>2</td><td>7</td><td>3+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Infiltrator Sergeant</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>3</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Marksman bolt carbine</td>
+                                            <td>24&quot;</td><td>Rapid Fire 1</td><td>4</td><td>0</td><td>1</td><td>Each unmodified hit roll of 6 made for this weapon&apos;s attacks automatically hits and results in a wound (do not make a wound roll for that attack).</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Tactical Squad [10 PL, 108pts]</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Faction: Imperium, Infantry, Tactical Squad, Core, Melta Bombs, Troops, Faction: Dark Angels</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Combat Squads</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Unit:</span> <span class="italic">Space Marine, Space Marine Sergeant</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>3x Space Marine [54pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> 3x Bolt pistol, 3x Boltgun, 3x Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Boltgun, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine Sergeant [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Boltgun, Frag &amp; Krak grenades, Plasma pistol
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Boltgun, Frag grenades, Krak grenades, Plasma pistol, Standard, Plasma pistol, Supercharge</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine w/Heavy Weapon [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Missile launcher
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Missile launcher, Frag missile, Missile launcher, Krak missile</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine w/Special Weapon [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Flamer, Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Flamer, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Space Marine</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>1</td><td>7</td><td>3+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Space Marine Sergeant</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>2</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Boltgun</td>
+                                            <td>24&quot;</td><td>Rapid Fire 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Flamer</td>
+                                            <td>12&quot;</td><td>Assault D6</td><td>4</td><td>0</td><td>1</td><td>Each time an attack is made with this weapon, that attack automatically hits the target.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Missile launcher, Frag missile</td>
+                                            <td>48&quot;</td><td>Heavy D6</td><td>4</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Missile launcher, Krak missile</td>
+                                            <td>48&quot;</td><td>Heavy 1</td><td>8</td><td>-2</td><td>D6</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Plasma pistol, Standard</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>7</td><td>-3</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Plasma pistol, Supercharge</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>8</td><td>-3</td><td>2</td><td>If any unmodified hit rolls of 1 are made for attacks with this weapon profile, the bearer is destroyed after shooting with this weapon.</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Tactical Squad [10 PL, 126pts]</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Faction: Imperium, Infantry, Tactical Squad, Core, Melta Bombs, Troops, Faction: Dark Angels</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Combat Squads</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Unit:</span> <span class="italic">Space Marine, Space Marine Sergeant</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>4x Space Marine [72pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> 4x Bolt pistol, 4x Boltgun, 4x Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Boltgun, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine Sergeant [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Boltgun, Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Boltgun, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine w/Heavy Weapon [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Missile launcher
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Missile launcher, Frag missile, Missile launcher, Krak missile</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine w/Special Weapon [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Flamer, Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Flamer, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Space Marine</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>1</td><td>7</td><td>3+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Space Marine Sergeant</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>2</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Boltgun</td>
+                                            <td>24&quot;</td><td>Rapid Fire 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Flamer</td>
+                                            <td>12&quot;</td><td>Assault D6</td><td>4</td><td>0</td><td>1</td><td>Each time an attack is made with this weapon, that attack automatically hits the target.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Missile launcher, Frag missile</td>
+                                            <td>48&quot;</td><td>Heavy D6</td><td>4</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Missile launcher, Krak missile</td>
+                                            <td>48&quot;</td><td>Heavy 1</td><td>8</td><td>-2</td><td>D6</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Elites [28 PL, 475pts, -1CP]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Apothecary [5 PL, 95pts, -1CP]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Astartes Chainsword, Bolt pistol, Chapter Command:  Chief Apothecary [1 PL, 30pts], Frag &amp; Krak grenades, Stratagem: Hero of the Chapter [-1CP]
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Apothecary, Character, Faction: Imperium, Infantry, Command Squad, Elite Character, Faction: Dark Angels, Elites, Chief Apothecary</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Chief Apothecary, Combat Restoratives, Command Squad, Narthecium [Aura]</span>, <span class="bold">Unit:</span> <span class="italic">Apothecary</span>, <span class="bold">Weapon:</span> <span class="italic">Astartes Chainsword, Bolt pistol, Frag grenades, Krak grenades</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Chief Apothecary</td>
+                                            <td>At the end of your Movement phase this model can use its Combat Restoratives ability twice instead of once. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Combat Restoratives</td>
+                                            <td>At the end of your Movement phase, this model can heal one friendly &lt;CHAPTER&gt; INFANTRY or &lt;CHAPTER&gt; BIKER model whose unit is within 3&quot; of it. That model regains up to D3 lost wounds. Each model can only be healed once per turn. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Command Squad</td>
+                                            <td>For each &lt;CHAPTER&gt; COMPANY VETERANS units included in a Detachment, one &lt;CHAPTER&gt; COMMAND SQUAD APOTHECARY unit can be included in that detachment without taking up a Battlefield Role slot. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Narthecium [Aura]</td>
+                                            <td>While a friendly &lt;CHAPTER&gt; INFANTRY or &lt;CHAPTER&gt; BIKER unit is within 3&quot; of this model, each time a model in that unit would lose a wound, roll one D6; on a 6, that wound is not lost. </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Apothecary</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>4</td><td>3</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Astartes Chainsword</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-1</td><td>1</td><td>When the bearer fights, it makes 1 additional attack with this weapon. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Deathwing Terminator Squad [9 PL, 165pts]</h4><a id="terminator"></a> 
+                                <p>
+                                    <span class="bold">Selections:</span> Watcher in the Dark
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Elites, Faction: Dark Angels, Infantry, Terminator, Faction: Imperium, Inner Circle, Deathwing, Core</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Combat Squads, Inner Circle, Teleport Strike</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Crux Terminatus, Watcher in the Dark</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Deathwing Sergeant [33pts]</h4>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Deathwing Sergeant</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <h4>Storm Bolter &amp; Power Sword</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Power sword, Storm bolter
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Power sword, Storm bolter</span>
+                                                </p>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <h4>Deathwing Terminator [33pts]</h4>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Deathwing Terminator</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <h4>Storm Bolter &amp; Power Fist</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Power fist, Storm bolter
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Power fist, Storm bolter</span>
+                                                </p>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <h4>Deathwing Terminator [33pts]</h4>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Deathwing Terminator</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <h4>Storm Bolter &amp; Power Fist</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Power fist, Storm bolter
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Power fist, Storm bolter</span>
+                                                </p>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <h4>Deathwing Terminator [33pts]</h4>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Deathwing Terminator</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <h4>Heavy Flamer, Chainfist</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Chainfist, Heavy flamer
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Chainfist, Heavy flamer</span>
+                                                </p>
+
+                                            </li>
+                                            <li>
+                                                <h4>Storm Bolter &amp; Power Fist</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Power fist, Storm bolter
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Power fist, Storm bolter</span>
+                                                </p>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <h4>Deathwing Terminator [33pts]</h4>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Deathwing Terminator</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <h4>Assault cannon, Power Fist</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Assault cannon, Power fist
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Assault cannon, Power fist</span>
+                                                </p>
+
+                                            </li>
+                                            <li>
+                                                <h4>Storm Bolter &amp; Power Fist</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Power fist, Storm bolter
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Power fist, Storm bolter</span>
+                                                </p>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Crux Terminatus</td>
+                                            <td>This model has a 5+ invulnerable save.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Watcher in the Dark</td>
+                                            <td>Once per battle, this unit can attempt to Deny the Witch as if it were a PSYKER. If the model attempting to manifest the psychic power is a CHAOS PSYKER, you can re-roll that Deny the Witch test.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Deathwing Sergeant</td>
+                                            <td>5&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>3</td><td>3</td><td>9</td><td>2+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Deathwing Terminator</td>
+                                            <td>5&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>3</td><td>2</td><td>8</td><td>2+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Assault cannon</td>
+                                            <td>24&quot;</td><td>Heavy 6</td><td>6</td><td>-1</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Chainfist</td>
+                                            <td>Melee</td><td>Melee</td><td>x2</td><td>-4</td><td>D3</td><td>Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll, and if that attack is allocated to a VEHICLE model, that attack has a Damage characteristic of 3.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Heavy flamer</td>
+                                            <td>12&quot;</td><td>Heavy D6</td><td>5</td><td>-1</td><td>1</td><td>Each time an attack is made with this weapon, that attack automatically hits the target.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Power fist</td>
+                                            <td>Melee</td><td>Melee</td><td>x2</td><td>-3</td><td>2</td><td>Each time an attack is made with this weapon, subtract 1 from that attack’s hit roll.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Power sword</td>
+                                            <td>Melee</td><td>Melee</td><td>+1</td><td>-3</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Storm bolter</td>
+                                            <td>24&quot;</td><td>Rapid Fire 2</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Ravenwing Champion [5 PL, 70pts]</h4><a id="ravenchamp"></a> 
+                                <p>
+                                    <span class="bold">Selections:</span> Blade of Triumph, Bolt pistol, Chapter Command:  Chapter Champion [1 PL, 10pts], Frag &amp; Krak grenades, Master-crafted power sword
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Character, Faction: Dark Angels, Faction: Adeptus Astartes, Biker, Faction: Imperium, Ravenwing Champion, Inner Circle, Company Champion, Elite Character, Faction: Ravenwing, Elites, Chapter Champion</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Inner Circle, Jink</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Exquisite Swordsman, Honour or Death, Martial Superiority, Skillful Parry, Turbo-boost</span>, <span class="bold">Unit:</span> <span class="italic">Ravenwing Champion (Chapter Command:  Chapter Champion)</span>, <span class="bold">Weapon:</span> <span class="italic">Blade of Triumph, Bolt pistol, Frag grenades, Krak grenades, Master-crafted power sword</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Black Knight Bike</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Plasma Talon
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Abilities:</span> <span class="italic">Turbo-boost</span>, <span class="bold">Weapon:</span> <span class="italic">Plasma Talon (standard), Plasma Talon (supercharge)</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Exquisite Swordsman</td>
+                                            <td>Each time this model makes a melee attack against an enemy CHARACTER unit, you can re-roll the wound roll. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Honour or Death</td>
+                                            <td>This model is eligible to perform a Heroic Intervention if it is within 6&quot; horizontally and 5&quot; vertically of an enemy unit, instead of 3&quot; horizontally and 5&quot; veritcally. Each time this model makes a Heroic Intervention move, so long as it ends its move either closer to the closest enemy model or within Engagement range of an enemy CHARACTER unit, it can move up to 6&quot;. All other rules of Heroic Intervention still apply. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Martial Superiority</td>
+                                            <td>At the start of the Fight phase, if this model is within Engagement Range of any enemy Character units, it can fight first this phase</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Skillful Parry</td>
+                                            <td>Each time a melee attack is made against this model, subtract 1 from the hit roll</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Turbo-boost</td>
+                                            <td>When this model Advances, add 6&quot; to its Move characteristic for that Movement phase instead of rolling a dice.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Ravenwing Champion (Chapter Command:  Chapter Champion)</td>
+                                            <td>14&quot;</td><td>2+</td><td>3+</td><td>4</td><td>5</td><td>5</td><td>5</td><td>9</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Blade of Triumph</td>
+                                            <td>Melee</td><td>Melee</td><td>+3</td><td>-3</td><td>3</td><td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Master-crafted power sword</td>
+                                            <td>Melee</td><td>Melee</td><td>+1</td><td>-3</td><td>2</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Plasma Talon (standard)</td>
+                                            <td>18&quot;</td><td>Assault 2</td><td>7</td><td>-3</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Plasma Talon (supercharge)</td>
+                                            <td>18&quot;</td><td>Assault 2</td><td>8</td><td>-3</td><td>2</td><td>If any unmodified hit rolls of 1 are made for attacks with this weapon profile, the bearer is destroyed after shooting with this weapon.</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Venerable Dreadnought [Legends] [9 PL, 145pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Rites of Initiation [1 PL, 10pts], Twin heavy flamer [Legends]
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Dreadnought, Faction: Imperium, Vehicle, Venerable Dreadnought, Core, Smokescreen, Elites, Faction: Dark Angels, Deathwing</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Explodes (3&quot;/1), Inner Circle</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Duty Eternal, Unyielding Ancient</span>, <span class="bold">Unit:</span> <span class="italic">Venerable Dreadnought</span>, <span class="bold">Weapon:</span> <span class="italic">Twin heavy flamer</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Dreadnought combat weapon w/ storm bolter</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Storm bolter
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Dreadnought combat weapon, Storm bolter</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Duty Eternal</td>
+                                            <td>Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack(to a minimum of 1)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Unyielding Ancient</td>
+                                            <td>Roll a D6 each time this model loses a wound; on a 6 the damage is ignored and that wound is not lost.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Venerable Dreadnought</td>
+                                            <td>6&quot;</td><td>2+</td><td>2+</td><td>6</td><td>7</td><td>8</td><td>4</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Dreadnought combat weapon</td>
+                                            <td>Melee</td><td>Melee</td><td>x2</td><td>-3</td><td>3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Storm bolter</td>
+                                            <td>24&quot;</td><td>Rapid Fire 2</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Twin heavy flamer</td>
+                                            <td>12&quot;</td><td>Heavy 2D6</td><td>5</td><td>-1</td><td>1</td><td>Each time an attack is made with this weapon, that attack automatically hits the target.</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Fast Attack [11 PL, 230pts]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Assault Squad [4 PL, 90pts]</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Assault Squad, Faction: Imperium, Infantry, Melta Bombs, Core, Faction: Dark Angels, Fast Attack</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Combat Squads</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Unit:</span> <span class="italic">Assault Marine, Assault Marine Sergeant</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>3x Space Marine [54pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> 3x Astartes Chainsword, 3x Bolt pistol, 3x Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Astartes Chainsword, Bolt pistol, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine Sergeant [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Power maul
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Power maul</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine w/Special Weapon [18pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Flamer, Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Flamer, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Assault Marine</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>1</td><td>7</td><td>3+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Assault Marine Sergeant</td>
+                                            <td>6&quot;</td><td>3+</td><td>3+</td><td>4</td><td>4</td><td>2</td><td>2</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Astartes Chainsword</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-1</td><td>1</td><td>When the bearer fights, it makes 1 additional attack with this weapon. </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Flamer</td>
+                                            <td>12&quot;</td><td>Assault D6</td><td>4</td><td>0</td><td>1</td><td>Each time an attack is made with this weapon, that attack automatically hits the target.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Power maul</td>
+                                            <td>Melee</td><td>Melee</td><td>+3</td><td>-1</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Attack Bike Squad [2 PL, 50pts]</h4><a id="attackbike"></a> 
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Attack Bike Squad, Biker, Faction: Imperium, Core, Fast Attack, Faction: Dark Angels, Ravenwing</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Jink</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Turbo-boost</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Attack Bike [2 PL, 50pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> 2x Bolt pistol, 2x Frag &amp; Krak grenades, Heavy bolter, Twin boltgun
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Attack Bike</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Heavy bolter, Krak grenades, Twin boltgun</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Turbo-boost</td>
+                                            <td>When this model Advances, add 6&quot; to its Move characteristic for that Movement phase instead of rolling a dice.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Attack Bike</td>
+                                            <td>14&quot;</td><td>3+</td><td>3+</td><td>4</td><td>5</td><td>4</td><td>2</td><td>7</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Heavy bolter</td>
+                                            <td>36&quot;</td><td>Heavy 3</td><td>5</td><td>-1</td><td>2</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Twin boltgun</td>
+                                            <td>24&quot;</td><td>Rapid Fire 2</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Bike Squad [5 PL, 90pts]</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Adeptus Astartes, Faction: Imperium, Biker, Bike Squad, Core, Fast Attack, Faction: Dark Angels, Ravenwing</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Angels of Death, Combat Squads, Jink</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Turbo-boost</span>, <span class="bold">Unit:</span> <span class="italic">Biker Sergeant, Space Marine Biker</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Biker Sergeant [30pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Twin boltgun
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Twin boltgun</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine Biker w/Bolt Pistol [30pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Twin boltgun
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Twin boltgun</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Space Marine Biker w/Special Weapon [30pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Frag &amp; Krak grenades, Plasma gun, Twin boltgun
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Weapon:</span> <span class="italic">Frag grenades, Krak grenades, Plasma gun, Standard, Plasma gun, Supercharge, Twin boltgun</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Turbo-boost</td>
+                                            <td>When this model Advances, add 6&quot; to its Move characteristic for that Movement phase instead of rolling a dice.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Biker Sergeant</td>
+                                            <td>14&quot;</td><td>3+</td><td>3+</td><td>4</td><td>5</td><td>3</td><td>2</td><td>8</td><td>3+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Space Marine Biker</td>
+                                            <td>14&quot;</td><td>3+</td><td>3+</td><td>4</td><td>5</td><td>3</td><td>1</td><td>7</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Plasma gun, Standard</td>
+                                            <td>24&quot;</td><td>Rapid Fire 1</td><td>7</td><td>-3</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Plasma gun, Supercharge</td>
+                                            <td>24&quot;</td><td>Rapid Fire 1</td><td>8</td><td>-3</td><td>2</td><td>If any unmodified hit rolls of 1 are made for attacks with this weapon profile, the bearer is destroyed after shooting with this weapon.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Twin boltgun</td>
+                                            <td>24&quot;</td><td>Rapid Fire 2</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="force">
+                <h2>Reinforcements (Imperium - Adepta Sororitas) [9 PL, 157pts, 12CP]</h2>
+                <ul>
+                    <li class="category">
+                        <h3>Configuration [12CP]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Battle Size [12CP]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> 3. Strike Force (101-200 Total PL / 1001-2000 Points)  [12CP]
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Detachment Command Cost</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Game Type</h4>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Order Convictions</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Adeptus Ministorum
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration</span>
+                                </p>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Heavy Support [9 PL, 157pts]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Retributor Squad [9 PL, 157pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> 2x Armourium Cherub [20pts]
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: &lt;ORDER&gt;, Faction: Adepta Sororitas, Faction: Adeptus Ministorum, Retributor Squad, Heavy Support, Infantry, Core</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Acts of Faith, Sacred Rites, Shield of Faith</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Abilities:</span> <span class="italic">Armourium Cherub, Storm of Retribution</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Retributor [12pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Boltgun, Frag &amp; Krak grenades
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Retributor</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Boltgun, Frag grenades, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Retributor Superior [17pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Frag &amp; Krak grenades, Power maul [5pts]
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Retributor Superior</span>, <span class="bold">Weapon:</span> <span class="italic">Frag grenades, Krak grenades, Power maul</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <h4>Bolt Pistol &amp; Boltgun</h4>
+                                                <p>
+                                                    <span class="bold">Selections:</span> Bolt pistol, Boltgun
+                                                </p>
+                                                <p class="profile-names">
+                                                    <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Boltgun</span>
+                                                </p>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <h4>Retributor w/ Heavy Weapon [22pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Heavy bolter [10pts]
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Retributor</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Heavy bolter, Krak grenades</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Retributor w/ Heavy Weapon [22pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Ministorum Heavy Flamer [10pts]
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Retributor</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Ministorum Heavy Flamer</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Retributor w/ Heavy Weapon [32pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Multi-melta [20pts]
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Retributor</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Multi-melta</span>
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>Retributor w/ Heavy Weapon [32pts]</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Bolt pistol, Frag &amp; Krak grenades, Multi-melta [20pts]
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Unit:</span> <span class="italic">Retributor</span>, <span class="bold">Weapon:</span> <span class="italic">Bolt pistol, Frag grenades, Krak grenades, Multi-melta</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Abilities</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Armourium Cherub</td>
+                                            <td>Once per battle, in your Shooting phase, after this unit has shot, one model in this unit can immediately shoot with one of its ranged weapons again. If this unit has two armorium cherubs, it can use this ability twice per battle, but only once per turn.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Storm of Retribution</td>
+                                            <td>Each time a model in this unit makes an attack with a Heavy weapon, the target does not gain the benefits of cover against that attack.</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Save</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Retributor</td>
+                                            <td>6&quot;</td><td>4+</td><td>3+</td><td>3</td><td>3</td><td>1</td><td>1</td><td>7</td><td>3+</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Retributor Superior</td>
+                                            <td>6&quot;</td><td>4+</td><td>3+</td><td>3</td><td>3</td><td>1</td><td>2</td><td>8</td><td>3+</td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="-1">
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Bolt pistol</td>
+                                            <td>12&quot;</td><td>Pistol 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Boltgun</td>
+                                            <td>24&quot;</td><td>Rapid Fire 1</td><td>4</td><td>0</td><td>1</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frag grenades</td>
+                                            <td>6&quot;</td><td>Grenade D6</td><td>3</td><td>0</td><td>1</td><td>Blast.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Heavy bolter</td>
+                                            <td>36&quot;</td><td>Heavy 3</td><td>5</td><td>-1</td><td>2</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Krak grenades</td>
+                                            <td>6&quot;</td><td>Grenade 1</td><td>6</td><td>-1</td><td>D3</td><td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Ministorum Heavy Flamer</td>
+                                            <td>12&quot;</td><td>Heavy D6</td><td>6</td><td>-1</td><td>1</td><td>Each time an attack is made with this weapon, that attack automatically hits the target.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Multi-melta</td>
+                                            <td>24&quot;</td><td>Heavy 2</td><td>8</td><td>-4</td><td>D6</td><td>Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Power maul</td>
+                                            <td>Melee</td><td>Melee</td><td>+3</td><td>-1</td><td>1</td><td>-</td>
+                                        </tr>
+                                    </table>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            </ul>
+
+
+
+            <div class="summary">
+                <h2>Force Rules</h2>
+                <p>
+                    <span class="bold">1st Company:</span>
+                     If every unit in your army (except UNALIGNED units) has the DARK ANGELS keyword, then DARK ANGELS Vanguard Detachments that only contain models with the DEATHWING and/or INNER CIRCLE keywords gain the 1st Company ability.<br/>
+                    • Deathwing Terminator Squad, Terminator Squad, Terminator Assault Squad and Relic Terminator Squad units in this Detachment gain the Objective Secured ability.<br/>
+                    • If your WARLORD is part of this Detachment, this Detachment&apos;s Command Benefits are changed to &apos;+3 Command points&apos;.
+                </p>
+                <p>
+                    <span class="bold">2nd Company:</span>
+                     If every unit in your army (except UNALIGNED units) has the DARK ANGELS Keyword, then DARK ANGELS Outrider Detachments that only contain models with the RAVENWING keyword gain the 2nd Company ability.<br/>
+                    • Bike Squad and Outrider Squad units in this Detachment gain the Objective Secured ability.<br/>
+                    • If your WARLORD is part of this Detachment, this Detachment&apos;s Command Benefits are changed to &apos;+3 Command points&apos;.
+                </p>
+                <p>
+                    <span class="bold">And They Shall Know No Fear:</span>
+                     Each time a Combat Attrition test is taken for this unit, ignore any or all modifiers
+                </p>
+                <p>
+                    <span class="bold">Angels of Death:</span>
+                     This unit has the following abilities: And They Shall Know No Fear, Bolter Discipline, Shock Assault and Combat Doctrines.
+                </p>
+                <p>
+                    <span class="bold">Assault Doctrine:</span>
+                     The Armour Penetration characteristic of Pistol and melee weapons this model is equipped with is improved by 1 whilst this combat doctrine is active.
+                </p>
+                <p>
+                    <span class="bold">Bolter Discipline:</span>
+                     Instead of following the normal rules for Rapid Fire weapons, models in this unit shooting Rapid Fire bolt weapons make double the number of attacks if any of the following apply<br/>
+                    <br/>
+                    - The shooting model&apos;s target is within half the weapon&apos;s range<br/>
+                    - The shooting model is Infantry (excluding Centurion models) and it&apos;s unit Remained Stationary in your previous Movement Phase.<br/>
+                    - The shooting model is a Terminator or Biker<br/>
+                    <br/>
+                    For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon (see page 195) with the Rapid Fire type. 
+                </p>
+                <p>
+                    <span class="bold">Combat Doctrines:</span>
+                     (See page 125 of Codex Space Marines)
+                </p>
+                <p>
+                    <span class="bold">Devastator Doctrine:</span>
+                     The Armour Penetration characteristic of Heavy and Grenade weapons this model is equipped with is improved by 1 whilst this combat doctrine is active.
+                </p>
+                <p>
+                    <span class="bold">Fire Discipline:</span>
+                     While the Tactical Doctrine is active for your army, INFANTRY models from your army (excluding DEATHWING models) can make attacks with Rapid Fire and Assault Weapons (excluding Blast weapons) while within Engagement Range of enemy units, but must target an enemy unit that is within Engagement Range of its own unit when they do so. In such circumstances, the model can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit, and while it is making such an attack, it has a Ballistic Skill characteristic of 5+.
+                </p>
+                <p>
+                    <span class="bold">Grim Resolve:</span>
+                     Each time a model with this tactic makes an attack, unless that model&apos;s unit has moved this turn (excluding pile-in and consolidation moves), add 1 to that attack&apos;s hit roll. Each time a Combat Attrition test is taken for this unit, it is automatically passed.
+                </p>
+                <p>
+                    <span class="bold">Implacable:</span>
+                     While the Assault Doctrine is active for your army, each time a DEATHWING INFANTRY or DEATHWING DREADNOUGHT model from your army makes a melee attack against a CHARACTER unit or unit that contains any models with a wounds characteristic if 8 or more, you can re-roll the wound roll.
+                </p>
+                <p>
+                    <span class="bold">Shock Assault:</span>
+                     Each time this unit fights if it made a charge move, was charged or performed a Heroic Intervention this turn, then until that fight is resolved, add 1 to the Attacks characteristic of models in this unit. 
+                </p>
+                <p>
+                    <span class="bold">Speed of the Raven:</span>
+                     While the Devastator Doctrine is active for your army:<br/>
+                    • Add 3&quot; to the Move characteristic of RAVENWING models from your army.<br/>
+                    • RAVENWING units from your army are eligible to shoot with in a turn in which they Advanced. Each time a model in that unit makes a ranged attack in a turn in which it Advanced, that attack suffers the penalty incurred to the hit roll as if firing an assault weapon.
+                </p>
+                <p>
+                    <span class="bold">Tactical Doctrine:</span>
+                     The Armour Penetration characteristic of Rapid Fire and Assault weapons this model is equipped with is improved by 1 whilst this combat doctrine is active.
+                </p>
+            </div>
+            <div class="summary">
+                <h2>Selection Rules</h2>
+                <p>
+                    <span class="bold">Acts of Faith:</span>
+                     One Miracle Die is generated at the start of each Player Turn.<br/>
+                    <br/>
+                    Once per phase, one unit from your army with this ability can perform one Act of Faith using Miracle dice on the following dice rolls:<br/>
+                    Advance, Charge, Hit, Wound, Saving throw, Damage; Morale test<br/>
+                    <br/>
+                    There&apos;s an ENTIRE PAGE of rules for Acts of Faith/Miracle dice in the Codex on page 91. I&apos;m not typing that in, and you should have them memorized by now, anyway.<br/>
+                    <br/>
+
+                </p>
+                <p>
+                    <span class="bold">Angels of Death:</span>
+                     This unit has the following abilities: And They Shall Know No Fear, Bolter Discipline, Shock Assault and Combat Doctrines.
+                </p>
+                <p>
+                    <span class="bold">Combat Squads:</span>
+                     Before any models are deployed at the start of the game, this unit when containing its maximum number of models, may be split into two units each containing an equal number of models.
+                </p>
+                <p>
+                    <span class="bold">Concealed Positions:</span>
+                     During Deployment when you set up this unit, if every model in this unit has this ability then it can be set up anywhere on the battlefield that is more than 9&quot; away from the enemy deployment zone  and any enemy models
+                </p>
+                <p>
+                    <span class="bold">Explodes (3&quot;/1):</span>
+                     When this model is destroyed, roll one D6 before removing it from play. On a 6 it explodes and each unit within 3&quot; suffers 1 mortal wound. 
+                </p>
+                <p>
+                    <span class="bold">Inner Circle:</span>
+                     If this unit has the Grim Resolve Chapter Tactic, or it has the Inheritors of the Primarch Successor tactic and it is using the Chapter Tactic of the Dark Angels, then:<br/>
+                    • Each time a Morale test is taken for this unit, it is automatically passed.<br/>
+                    • While this unit is within Engagement Range of any enemy FALLEN units, unless this unit has the VEHICLE keyword, this unit cannot be selected to Fall Back.<br/>
+                    • Each time you select this unit to Fall Back, unless it has the VEHICLE, RAVENWING or CHAPTER MASTER keywords, roll 2D6: if the result is less than or equal to the unit’s Leadership characteristic it can Fall Back, otherwise it cannot Fall Back and must Remain Stationary instead.<br/>
+                    • Each time an attack is made against this unit, if this unit has the INFANTRY keyword, an unmodified wound roll of 1-3 always fails, irrespective of any abilities that the weapon or the model making that attack may have.
+                </p>
+                <p>
+                    <span class="bold">Jink:</span>
+                     If this unit has the Grim Resolve Chapter Tactic, or it has the Inheritors of the Primarch Successor Tactic, and it is using the Chapter Tactic of the Dark Angels, then:<br/>
+                    • Models in this unit have a 5+ invulnerable save against ranged attacks. In your Movement phase, if this unit Remains Stationary, it loses this invulnerable save until the start of your next Movement phase.<br/>
+                    • Each time this unit Advances, until the start of your next turn, models in this unit have a 4+ invulnerable save against ranged attacks.
+                </p>
+                <p>
+                    <span class="bold">Sacred Rites:</span>
+                     This unit gains a bonus depending on which sacred rites are active for your army. After players have determined their mission, you must select one sacred rite from the following table to be active for your army. Alternatively, you can randomly determine two sacred rites from the table to be active for your army by rolling two D6 and looking up the results (if a double is rolled, roll both dice again until two different results are rolled). In either case, these sacred rites are active for your army until the end of the battle. Some rules can make additional sacred rites become active for a unit during the battle. Duplicated active sacred rites on that unit have no additional effect.<br/>
+                    <br/>
+                    1. Hand of the Emperor:<br/>
+                    While this sacred rite is active, add 1 to Advance rolls and charge rolls made for this unit.<br/>
+                    <br/>
+                    2. Spirit of the Martyr:<br/>
+                    While this sacred rite is active, each time a model in this unit is destroyed by a melee attack and does not explode, roll one D6, on a 6, after the attacking model&apos;s unit has finished making its attacks, it suffers 1 mortal wound (a unit can suffer a maximum of 6 mortal wounds per phase as the result of this ability).<br/>
+                    <br/>
+                    3. Aegis of the Emperor:<br/>
+                    While this sacred rite is active, each time this units uses its Shield of Faith ability to take a Deny the Witch test, if the result of that test was an unmodified result of 5+, or it it was greater than the result of the Psychic test, that Deny the Witch test is passed.<br/>
+                    <br/>
+                    4. Divine Guidance:<br/>
+                    While this sacred rite is active, each time a model in this units makes a ranged attack, on an unmodified wound roll of 6, the Armour Penetration characteristic of that attack is improved by 1.<br/>
+                    <br/>
+                    5. The Passion:<br/>
+                    While this sacred rite is active, each time a model in this unit makes a melee attack, an unmodified hit roll of 6 scores 1 additional hit.<br/>
+                    <br/>
+                    6. Light of the Emperor:<br/>
+                    While this sacred rite is active, you can ignore any or all modifiers to this unit&apos;s Leadership characteristic, and each time a Combat Attrition test is taken for this unit, you can ignore any or all modifiers.<br/>
+
+                </p>
+                <p>
+                    <span class="bold">Shield of Faith:</span>
+                     Models in this unit have a 6+ invulnerable save.<br/>
+                    <br/>
+                    In your opponent&apos;s Psychic phase, this unit can attempt to deny one psychic power as if it were a PSYKER. Each time a Deny the Witch test is take for this unit, roll one D6 instead of 2D6: if the result of that test was an unmodified result of 6, or if it was greater than the result of the Psychic test, that Deny the Witch test is passed.
+                </p>
+                <p>
+                    <span class="bold">Teleport Strike:</span>
+                     During deployment, you can set up this model in a teleportarium chamber instead of placing it on the battlefield. At the end of any of your Movement phases this model can teleport into battle - set it up anywhere on the battlefield that is more than 9&quot; away from any enemy models.
+                </p>
+            </div>
+            <br>
+            <p>Created with <a href="https://www.battlescribe.net">BattleScribe</a></p>
+        </div>
+    </body>
+</html>
